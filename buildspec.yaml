@@ -23,5 +23,5 @@ artifacts:
   files:
     /src/*
     requirements.txt
-    appspec.yaml
+    appspec.yml
     /scripts/*
