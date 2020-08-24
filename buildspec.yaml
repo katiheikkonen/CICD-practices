@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+    commands:
+      - echo "Installing dependencies"
+      - python -m pip install --upgrade pip
+      - pip install flake8 pytest
+      - if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+  pre_build:
+    commands:
+      - echo "pre-build"
+  build:
+    commands:
+      - echo "Running unittests"
+      - pytest -v --cov
+  post_build:
+    commands:
+      - echo "Tests run succesfully"
