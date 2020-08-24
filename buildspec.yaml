@@ -21,7 +21,7 @@ phases:
       - echo "Tests run succesfully"
 artifacts:
   files:
-    src/*
-    requirements.txt
-    appspec.yml
-    scripts/*
+    - src/*
+    - requirements.txt
+    - appspec.yml
+    - scripts/*
