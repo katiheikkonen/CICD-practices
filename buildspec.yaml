@@ -19,9 +19,9 @@ phases:
   post_build:
     commands:
       - echo "Tests run succesfully"
-  artifacts:
-    files:
-      /src/*
-      requirements.txt
-      appspec.yaml
-      /scripts/*
+artifacts:
+  files:
+    /src/*
+    requirements.txt
+    appspec.yaml
+    /scripts/*
